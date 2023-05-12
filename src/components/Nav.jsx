@@ -28,19 +28,19 @@ const Nav = () => {
 			</div>
 
 			<div>
-				<Link to="home">
+				<Link to="services">
 					<BsFillClipboardDataFill className=" fill-stone-500 hover:fill-zinc-200 hover:cursor-pointer w-[1.8rem] h-[2.5rem]" />
 				</Link>
 			</div>
 
 			<div>
-				<Link>
+				<Link to="work">
 					<BsBriefcaseFill className=" fill-stone-500 hover:fill-zinc-200 hover:cursor-pointer w-[1.8rem] h-[2.5rem]" />
 				</Link>
 			</div>
 
 			<div>
-				<Link>
+				<Link to="contact">
 					<BsFillChatSquareDotsFill className=" fill-stone-500 hover:fill-zinc-200 hover:cursor-pointer w-[1.8rem] h-[2.5rem]" />
 				</Link>
 			</div>
