@@ -12,7 +12,7 @@ const Header = () => {
     })
   })
 	return (
-		<header id="home" className={`${bg? 'backdrop-blur-md bg-zinc-900/50':'w-full p-2'} p-2 flex items-center fixed top-0 w-full text-white transition-all duration-300`}>
+		<header id="home" className={`${bg? 'backdrop-blur-md border-b':'w-full p-2'} p-2 flex items-center fixed top-0 w-full text-white transition-all duration-300`}>
         
         <div className="container z-10 mx-auto h-full flex items-center justify-between">
           <div>

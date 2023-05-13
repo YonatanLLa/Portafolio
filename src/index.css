@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body, html{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -19,6 +19,24 @@ body{
 }
 
 .btn:hover {
+  background: linear-gradient(
+    92.23deg,
+    #9400D3 21.43%,
+    #8A2BE2  50.63%,
+    #68248a 100%,
+    #5e2993 117.04%
+  );
+}
+
+
+.active {
+  color: #fff;
+  /* padding-left: 1.5rem; */
+  /* padding-right: 1.5rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .5rem;
   background: linear-gradient(
     92.23deg,
     #9400D3 21.43%,

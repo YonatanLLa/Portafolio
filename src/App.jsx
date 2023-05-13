@@ -8,7 +8,7 @@ import Work from "./components/Work";
 
 function App() {
 	return (
-		<div className=" bg-zinc-800">
+		<div className=" bg-zinc-950">
 			<Banner/>
 			{/* <Nav/> */}
 			<div className="lg:hidden ">
