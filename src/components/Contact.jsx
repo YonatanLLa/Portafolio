@@ -23,9 +23,9 @@ const Contact = () => {
 
 	return (
 		<form className="section h-full" id="contact">
-			<div className=" container pl-28 pr-28 mx-auto">
+			<div className=" container lg:pl-28 lg:pr-28 mx-auto">
 				{/* contenedor */}
-				<div className="flex flex-col lg:gap-x-8 mb-12 mt-12">
+				<div className="flex flex-col lg:gap-x-8 lg:mb-12 lg:mt-12">
 					<div className="mb-16">
 						<h2 className="h2 text-gradient text-3xl lg:text-4xl font-medium lg:font-extrabold mb-4 before:content-contact relative before:absolute before::opacity-40 before:-top-[2rem] before:left-60 let before:hidden before:lg:block z-40 text-center ">
 							Trabaja conmigo
@@ -35,7 +35,7 @@ const Contact = () => {
 							mantengamonos en contacto!
 						</p>
 					</div>
-					<div className="flex border rounded-[1.5rem] p-8 bg-zinc-700/30">
+					<div className="flex flex-col lg:flex-row border rounded-[1.5rem] p-8 lg:bg-zinc-700/30">
 						{/* datos */}
 						<div className="flex-1 w-full flex-col gap-8">
 							<div className="flex justify-start items-start gap-6">

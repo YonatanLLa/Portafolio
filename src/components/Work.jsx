@@ -12,7 +12,7 @@ const Work = () => {
 						Mis ultimos trabajos
 					</h1>
 					{/* project  */}
-					<div className="flex justify-center items-center gap-5">
+					<div className="flex flex-col lg:flex-row justify-center items-center gap-5">
 						{/* text */}
 						<div className="flex flex-col w-full justify-center item-center gap-4">
 							<div>
@@ -76,7 +76,7 @@ const Work = () => {
 
 				<div className="flex flex-col mt-8 mb-8">
 					{/* project  */}
-					<div className="flex justify-center items-center gap-5">
+					<div className="flex flex-col lg:flex-row justify-center items-center gap-5">
 						{/* text */}
 						<div className="flex flex-col w-full justify-center item-center gap-4">
 							<div>

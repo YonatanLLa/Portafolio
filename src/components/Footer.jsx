@@ -87,7 +87,7 @@ const Footer = () => {
 					<h2 className="h2">Concat</h2>
 					<div className="flex gap-1 items-center">
 						<a
-							href="https://www.instagram.com/frontendyona/"
+							href="https://web.whatsapp.com/"
 							target="_black"
 							className=" cursor-pointer text-[1rem]"
 						>
