@@ -18,13 +18,20 @@ module.exports = {
       xl: '1200px',
     },
     extend: {
+      content: {
+        about: 'url("/src/assets/outline-text/about.svg")',
+        portfolio: 'url("/src/assets/outline-text/portfolio.svg")',
+        services: 'url("/src/assets/outline-text/services.svg")',
+        testimonials: 'url("/src/assets/outline-text/testimonials.svg")',
+        contact: 'url("/src/assets/outline-text/contact.svg")',
+      },
       colors: {
         primary: '#0a0a0a',
         accent: '#B809C3',
       },
       backgroundImage: {
         site: "url('./assets/site-bg.jpg')",
-        about: "url('./assets/about.png')",
+        about: "url('./assets/profile/profileOriginal.png')",
         services: "url('./assets/services.png')",
       },
     },

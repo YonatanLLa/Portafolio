@@ -1,5 +1,5 @@
 import React from "react";
-import Foto from "../assets/Foto.png";
+import Foto from "../assets/fondoFinal.png";
 
 const Banner = () => {
 	return (
@@ -10,7 +10,7 @@ const Banner = () => {
 			<div className="container ml-[5.5rem]  mr-[5.5rem] mx-auto border bg-zinc-900/30 rounded-[1rem] mt-10">
 				<div className="flex items-center h-full pt-8 pb-10 gap-2">
 					<div className="flex-1 flex-col items-center  p-4 lg:items-start  w-full h-full">
-						<p className="text-[1.6rem] text-accent mb-[22px]">Hola! Soy Yonatan</p>
+						<p className="text-[1.6rem] text-gradient mb-[22px]">Hola! Soy Yonatan</p>
 						<h1
 							className="text-4x1 mb-[22px] leading-[44px] md:text-5xl
               md:leading-light lg:text-7xl
@@ -24,7 +24,7 @@ const Banner = () => {
             </p>
 			<button className="btn mt-10 p-3">Trabaja conmigo</button>
 					</div>
-					<div className="hidden lg:flex flex-1 justify-end items-end h-full">
+					<div  className="hidden  lg:flex flex-1 lg:flex-row-reverse rotate-[0deg] h-full scale-x-[-1]">
 						<img src={Foto} alt="" />
 						{/* <img src="" alt="" /> */}
 					</div>

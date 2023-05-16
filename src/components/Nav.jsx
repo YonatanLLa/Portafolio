@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useState} from "react";
 import { Link } from "react-scroll";
 
 import { FaHome } from "react-icons/fa";
@@ -12,17 +12,19 @@ import {
 } from "react-icons/bs";
 
 const Nav = () => {
+	const [smooth, setSmooth]  = useState(false)
 	return (
 		<div className="flex">
-			<div className=" hover:bg-black/20">
+			<div className={`hover:bg-white/20 rounded-[.5rem]`}>
 				<Link
 					to="banner"
 					activeClass="active"
-					smooth={true}
+					smooth={smooth}
 					spy={true}
-					className=" cursor-pointer pl-5 pr-5 flex flex-col items-center"
+					// offset={-200}
+					className=" cursor-pointer pl-5 pr-5 flex flex-col items-center "
 				>
-					<FaHome className="fill-stone-500 hover:fill-zinc-200 hover:cursor-pointer w-[1.8rem] h-[2rem] focus:fill-stone-900" />
+					<FaHome className="fill-stone-100  w-[1.8rem] h-[2rem] focus:fill-stone-600" />
 					<span className=" leading-none text-[12px]">home</span>
 				</Link>
 			</div>
@@ -32,11 +34,12 @@ const Nav = () => {
 					className=" cursor-pointer pl-5 pr-5  flex flex-col items-center"
 					to="about"
 					activeClass="active"
+					// offset={-200}
 					smooth={true}
 					spy={true}
 				>
-					<RiUser3Fill className=" fill-stone-500 hover:fill-zinc-200 hover:cursor-pointer w-[1.8rem] h-[2rem] " />
-					<span className=" leading-none text-[12px]">home</span>
+					<RiUser3Fill className=" fill-stone-100  w-[1.8rem] h-[2rem] " />
+					<span className=" leading-none text-[12px]">about</span>
 
 				</Link>
 			</div>
@@ -47,10 +50,11 @@ const Nav = () => {
 					to="services"
 					activeClass="active"
 					smooth={true}
+					// offset={200}
 					spy={true}
 				>
-					<BsFillClipboardDataFill className=" fill-stone-500 hover:fill-zinc-200 hover:cursor-pointer w-[1.8rem] h-[2rem]" />
-					<span className=" leading-none text-[12px]">home</span>
+					<BsFillClipboardDataFill className=" fill-stone-100  w-[1.8rem] h-[2rem]" />
+					<span className=" leading-none text-[12px]">skills</span>
 
 				</Link>
 			</div>
@@ -61,10 +65,11 @@ const Nav = () => {
 					to="work"
 					activeClass="active"
 					smooth={true}
+					// offset={200}
 					spy={true}
 				>
-					<BsBriefcaseFill className=" fill-stone-500 hover:fill-zinc-200 hover:cursor-pointer w-[1.8rem] h-[2rem]" />
-					<span className=" leading-none text-[12px]">home</span>
+					<BsBriefcaseFill className=" fill-stone-100  w-[1.8rem] h-[2rem]" />
+					<span className=" leading-none text-[12px]">work</span>
 
 				</Link>
 			</div>
@@ -75,9 +80,10 @@ const Nav = () => {
 					to="contact"
 					activeClass="active"
 					smooth={true}
+					// offset={200}
 					spy={true}
 				>
-					<BsFillChatSquareDotsFill className=" fill-stone-500 hover:fill-zinc-200 hover:cursor-pointer w-[1.8rem] h-[2rem]" />
+					<BsFillChatSquareDotsFill className=" fill-stone-100 w-[1.8rem] h-[2rem]" />
 					<span className=" leading-none text-[12px]">home</span>
 
 				</Link>
