@@ -18,7 +18,7 @@ const Banner = () => {
               md:leading-light lg:text-7xl
               lg:leading-[1.2] font-bold md:tracking-[-2px]"
 						>
-							Full Stack <br /> <span>Web Debeloper</span>
+							Full Stack <br /> <span>Web Developer</span>
 						</h1>
 						<p>Desarrollo de aplicaciones eficientes y escalables.</p>
 						<button className="btn mt-10 p-3">Trabaja conmigo</button>

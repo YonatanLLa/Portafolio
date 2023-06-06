@@ -15,6 +15,9 @@ const Nav = () => {
 	const [smooth, setSmooth]  = useState(false)
 	return (
 		<div className="flex">
+			<div>
+				
+			</div>
 			<div className={`hover:bg-white/20 rounded-[.5rem]`}>
 				<Link
 					to="banner"

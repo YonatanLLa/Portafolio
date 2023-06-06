@@ -1,5 +1,5 @@
 import React from "react";
-import project from "../assets/project.png";
+import project from "../assets/pokemon.png";
 import { FiGithub } from "react-icons/fi";
 import { BiLink } from "react-icons/bi";
 
@@ -41,7 +41,8 @@ const Work = () => {
 										<FiGithub className="text-[3rem] p-3" />
 									</a>
 									<a
-										href="#"
+										href="https://pokemons-amber.vercel.app"
+										target="_blank"
 										className=" border rounded-lg hover:bg-white/50"
 									>
 										<BiLink className="text-[3rem] p-3" />
@@ -64,7 +65,9 @@ const Work = () => {
 								<div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70 group-hover:backdrop-blur-md"></div>
 								<div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
 									<h1 className="font-dmserif text-3xl font-bold text-white">
-										Ver Demo
+										<a href="https://pokemons-amber.vercel.app" target="_blank">
+											Ver Demo
+										</a>{" "}
 									</h1>
 								</div>
 							</div>
@@ -104,10 +107,7 @@ const Work = () => {
 									>
 										<FiGithub className="text-[3rem] p-3" />
 									</a>
-									<a
-										href="#"
-										className=" border rounded-lg hover:bg-white/50"
-									>
+									<a href="#" className=" border rounded-lg hover:bg-white/50">
 										<BiLink className="text-[3rem] p-3" />
 									</a>
 								</div>
