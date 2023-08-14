@@ -5,7 +5,7 @@ const Banner = () => {
 	return (
 		<section
 			id="banner"
-			className="section flex items-center justify-center py-32 lg:py-0 overflow-hidden "
+			className="section flex items-center justify-center py-14 lg:py-0 overflow-hidden "
 		>
 			<div className="container lg:ml-[5.5rem]  lg:mr-[5.5rem] mx-auto lg:border lg:bg-zinc-900/30 rounded-[1rem] mt-10">
 				<div className="flex items-center h-full pt-8 pb-10 gap-2">
