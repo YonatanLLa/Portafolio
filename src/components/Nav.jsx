@@ -15,9 +15,7 @@ const Nav = () => {
 	const [smooth, setSmooth]  = useState(false)
 	return (
 		<div className="flex">
-			<div>
-				
-			</div>
+
 			<div className={`hover:bg-white/20 rounded-[.5rem]`}>
 				<Link
 					to="banner"
@@ -87,7 +85,7 @@ const Nav = () => {
 					spy={true}
 				>
 					<BsFillChatSquareDotsFill className=" fill-stone-100 w-[1.8rem] h-[2rem]" />
-					<span className=" leading-none text-[12px]">home</span>
+					<span className=" leading-none text-[12px]">Contact</span>
 
 				</Link>
 			</div>

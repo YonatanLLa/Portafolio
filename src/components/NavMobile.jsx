@@ -13,12 +13,12 @@ import {
 
 const NavMobile = () => {
 	return (
-		<nav className="section fixed bottom-2 w-screen overflow-hidden z-50">
-			<div className="container mx-auto">
+		<nav className="section fixed bottom-4 w-screen overflow-hidden z-50">
+			<div className="container mx-auto ">
 				{/* div nav inner */}
-				<div className="w-full bg-black/20 h-[96px] backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-5 flex justify-center items-center text-2xl text-white/50">
+				<div className="w-full bg-black/20 h-[96px] backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-5 flex justify-center items-center text-2xl text-white/50 gap-4">
 					<Link 
-            className=" cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
+            className=" cursor-pointer  w-[60px] h-[60px] flex items-center justify-center"
 						to="banner"
 						activeClass="active"
 						smooth={true}
