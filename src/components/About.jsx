@@ -7,7 +7,7 @@ const About = () => {
 			<div className="container mx-auto">
 				<div className="flex lg:flex-row h-full items-center flex-col">
 					{/* img */}
-					<div className="flex-auto bg-about bg-contain bg-no-repeat h-[200px]  lg:h-[440px]  mix-blend-lighten filter brightness-50 bg-top mr-4 lg:mr-0"></div>
+					<div className="flex-auto lg:bg-about bg-contain bg-no-repeat   lg:h-[440px]  mix-blend-lighten filter brightness-50 bg-top mr-4 lg:mr-0"></div>
 					{/* text */}
 					<div className="flex-1 mt-12">
 						<h2 className="h2 text-gradient text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before::opacity-40 before:-top-[2rem] before:hidden before:lg:block z-40">

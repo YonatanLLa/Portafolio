@@ -16,10 +16,9 @@ const Header = () => {
 		<header
 			id="home"
 			className={`${
-				bg ? "backdrop-blur-md border-b" : "lg:w-full p-2"
-			} p-2 flex items-center w-full fixed overflow-hidden z-50 top-0 lg:w-full text-white transition-all duration-300`}
-		>
-			<div className="container z-10 mx-auto h-full  flex items-center justify-between">
+				bg ? "backdrop-blur-md border-b" : " p-2"
+			} p-2 flex items-center w-full fixed overflow-hidden z-50 top-0  text-white transition-all duration-300`}>
+			<div className="container z-10 mx-auto h-full  flex items-center justify-between w-full">
 				<Link to="/">
 					<img className="w-28" src={logoImg} alt="" />
 				</Link>
