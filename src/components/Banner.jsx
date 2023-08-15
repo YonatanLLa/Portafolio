@@ -14,7 +14,7 @@ const Banner = () => {
 							Hola! Soy Yonatan
 						</p>
 						<h1
-							className="text-4xl mb-[22px] leading-[44px] md:text-5xl
+							className="text-[3rem] mb-[22px] leading-[44px] md:text-5xl
               md:leading-light lg:text-7xl
               lg:leading-[1.2] font-bold md:tracking-[-4px]"
 						>

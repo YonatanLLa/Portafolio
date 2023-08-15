@@ -5,7 +5,7 @@ const About = () => {
 	return (
 		<section className="section bg-stone-900/10" id="about">
 			<div className="container mx-auto">
-				<div className="flex lg:flex-row h-[70vh] items-center flex-col">
+				<div className="flex lg:flex-row h-full items-center flex-col">
 					{/* img */}
 					<div className="flex-auto lg:bg-about bg-contain bg-no-repeat   lg:h-[440px]  mix-blend-lighten filter brightness-50 bg-top mr-4 lg:mr-0"></div>
 					{/* text */}
