@@ -5,9 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
 	plugins: [react()],
 	build: {
-
 		rollupOptions: {
-			external: [], // Deja esta lista vacía
+			external: ["react-hot-toast"],
 		},
 	},
 });
