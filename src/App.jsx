@@ -7,6 +7,7 @@ import NavMobile from "./components/NavMobile";
 import Services from "./components/Services";
 import Work from "./components/Work";
 
+
 function App() {
 	return (
 		<div className=" bg-zinc-950">

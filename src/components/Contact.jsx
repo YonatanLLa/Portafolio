@@ -1,28 +1,48 @@
 import React, { useState } from "react";
 import { MdOutlineMarkEmailUnread, MdOutlineLocationOn } from "react-icons/md";
 import emailjs from "@emailjs/browser";
-// import { useRef } from "react";
+import { useRef } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
-	// const form = useRef();
+	const form = useRef();
 
 	const sendEmail = (e) => {
 		e.preventDefault();
 		emailjs
 			.sendForm(
-				"service_zvd91rq",
-				"template_3y9hxfw",
-				e.target,
+				"service_ttt9rej",
+				"template_to1gtyp",
+				form.current,
 				"e64YvNc7hR_JbMCwL"
 			)
-			.then((res) => {
-				alert("¡Mensaje enviado!");
-				console.log(res);
-			  });
+			.then(
+				(result) => {
+					if (result.status === 200) {
+						toast("Mensaje enviado!", {
+							icon: "👏",
+							style: {
+								borderRadius: "10px",
+								background: "#333",
+								color: "#fff",
+							},
+						});
+						
+					}
+					
+					form.current.reset(); // Reset the form
+				},
+				(error) => {
+					return {
+						error: error.message,
+					}
+				}
+			);
+		
 	};
 
 	return (
-		<form className="section h-full" id="contact">
+		<div className="section h-full" id="contact">
 			<div className=" container lg:pl-28 lg:pr-28 mx-auto">
 				{/* contenedor */}
 				<div className="flex flex-col lg:gap-x-8 lg:mb-12 lg:mt-12">
@@ -45,9 +65,12 @@ const Contact = () => {
 									<h4 className="text-[15px]">estoy para ayudarte</h4>
 									<p className="text-[15px] text-purple-400 ">
 										Eviame un email a <br />{" "}
-										<span className=" text-purple-400">
-											yonalla06@gmail.com
-										</span>
+										<a
+											className=" text-purple-400"
+											href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
+											target="_blank">
+											yonatanllanto175@gmail.com
+										</a>
 									</p>
 								</div>
 							</div>
@@ -67,8 +90,8 @@ const Contact = () => {
 
 						<form
 							className=" space-y-8 w-full max-w-[580px]"
-							onSubmit={sendEmail}
-						>
+							ref={form}
+							onSubmit={sendEmail}>
 							<div className="flex gap-8">
 								<input
 									id="nombre"
@@ -97,8 +120,7 @@ const Contact = () => {
 								cols="30"
 								rows="5"
 								className="caret-purple-400 bg-transparent border-b outline-none w-full placeholder:text-white/30 focus:border-purple-400 transition-all"
-								placeholder="Tu mensaje"
-							></textarea>
+								placeholder="Tu mensaje"></textarea>
 							<button className="btn px-8 py-2" type="submit">
 								Enviar
 							</button>
@@ -106,7 +128,7 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-		</form>
+		</div>
 	);
 };
 

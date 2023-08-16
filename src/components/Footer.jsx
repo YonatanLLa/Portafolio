@@ -23,7 +23,7 @@ const Footer = () => {
 				{/* Social */}
 				<div className="flex lg:gap-44 justify-between px-2">
 					<div className="flex flex-col ">
-						<h2 className="h2">Social</h2>
+						<h2 className="h2">Red Social</h2>
 						<div className="flex flex-col gap-1">
 							<div className="flex gap-1 items-center">
 								{" "}
@@ -51,7 +51,7 @@ const Footer = () => {
 									className=" cursor-pointer text-[1rem]">
 									<AiOutlineInstagram className=" fill-purple-400" />
 								</a>
-								<span className="text-[1rem]">Linkedin</span>
+								<span className="text-[1rem]">Instagram</span>
 							</div>
 
 							<div className="flex gap-1 items-center">
@@ -70,13 +70,13 @@ const Footer = () => {
 									className=" cursor-pointer text-[1rem]">
 									<AiOutlineYoutube className=" fill-purple-400" />
 								</a>
-								<span className="text-[1rem]">Youtebe</span>
+								<span className="text-[1rem]">Youtube</span>
 							</div>
 						</div>
 					</div>
 					{/* concat */}
 					<div>
-						<h2 className="h2">Concat</h2>
+						<h2 className="h2">Contactame</h2>
 						<div className="flex gap-1 items-center">
 							<a
 								href="https://web.whatsapp.com/"

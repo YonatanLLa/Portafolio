@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const About = () => {
 	
@@ -22,7 +23,11 @@ const About = () => {
 							Sequelize.
 							<br />
 						</p>
-						<button className="btn mt-10 p-3 ">Trabaja conmigo</button>
+						<button className="btn mt-10 p-3 ">
+							<Link to="contact" >
+								Trabaja conmigo
+							</Link>
+						</button>
 					</div>
 				</div>
 			</div>

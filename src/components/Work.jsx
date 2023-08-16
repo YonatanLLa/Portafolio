@@ -1,7 +1,4 @@
 import React from "react";
-import project from "../assets/pokemon.png";
-import project2 from "../assets/book.png";
-import project3 from "../assets/portfolio.png";
 import { FiGithub } from "react-icons/fi";
 import { BiLink } from "react-icons/bi";
 import { datos } from "../logic/datos";
