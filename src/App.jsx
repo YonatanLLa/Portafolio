@@ -6,12 +6,15 @@ import Header from "./components/Header";
 import NavMobile from "./components/NavMobile";
 import Services from "./components/Services";
 import Work from "./components/Work";
+import { Toaster } from "react-hot-toast";
 
 
 function App() {
 	return (
 		<div className=" bg-zinc-950">
-			<Banner/>
+			<Toaster />
+
+			<Banner />
 			{/* <Nav/> */}
 			<div className="lg:hidden ">
 				<NavMobile />
@@ -21,7 +24,7 @@ function App() {
 			<Services />
 			<Work />
 			<Contact />
-			<Footer/>
+			<Footer />
 		</div>
 	);
 }
