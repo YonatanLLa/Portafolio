@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { MdOutlineMarkEmailUnread, MdOutlineLocationOn } from "react-icons/md";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
 	const form = useRef();
@@ -18,17 +17,6 @@ const Contact = () => {
 			)
 			.then(
 				(result) => {
-					if (result.status === 200) {
-						toast("Mensaje enviado!", {
-							icon: "👏",
-							style: {
-								borderRadius: "10px",
-								background: "#333",
-								color: "#fff",
-							},
-						});
-						
-					}
 					
 					form.current.reset(); // Reset the form
 				},
@@ -128,7 +116,6 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-			<Toaster />
 		</div>
 	);
 };
