@@ -23,11 +23,11 @@ const About = () => {
 							Sequelize.
 							<br />
 						</p>
-						<button className="btn mt-10 p-3 ">
 							<Link to="contact" >
+						<button className="btn mt-10 p-3 ">
 								Trabaja conmigo
-							</Link>
 						</button>
+							</Link>
 					</div>
 				</div>
 			</div>

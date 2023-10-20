@@ -22,8 +22,7 @@ const Nav = () => {
 					activeClass="active"
 					smooth={smooth}
 					spy={true}
-					// offset={-200}
-					className=" cursor-pointer pl-5 pr-5 flex flex-col items-center "
+					className=" cursor-pointer pl-5 pr-5 flex flex-col items-center hover:bg-white/20 rounded-[.5rem] "
 				>
 					<FaHome className="fill-stone-100  w-[1.8rem] h-[2rem] focus:fill-stone-600" />
 					<span className=" leading-none text-[12px]">home</span>
@@ -32,10 +31,9 @@ const Nav = () => {
 
 			<div>
 				<Link
-					className=" cursor-pointer pl-5 pr-5  flex flex-col items-center"
+					className=" cursor-pointer pl-5 pr-5  flex flex-col items-center hover:bg-white/20 rounded-[.5rem]"
 					to="about"
 					activeClass="active"
-					// offset={-200}
 					smooth={true}
 					spy={true}
 				>
@@ -47,11 +45,10 @@ const Nav = () => {
 
 			<div>
 				<Link
-					className=" cursor-pointer pl-5 pr-5  flex flex-col items-center"
+					className=" cursor-pointer pl-5 pr-5  flex flex-col items-center hover:bg-white/20 rounded-[.5rem]"
 					to="services"
 					activeClass="active"
 					smooth={true}
-					// offset={200}
 					spy={true}
 				>
 					<BsFillClipboardDataFill className=" fill-stone-100  w-[1.8rem] h-[2rem]" />
@@ -62,11 +59,10 @@ const Nav = () => {
 
 			<div>
 				<Link
-					className=" cursor-pointer pl-5 pr-5  flex flex-col items-center"
+					className=" cursor-pointer pl-5 pr-5  flex flex-col items-center hover:bg-white/20 rounded-[.5rem]"
 					to="work"
 					activeClass="active"
 					smooth={true}
-					// offset={200}
 					spy={true}
 				>
 					<BsBriefcaseFill className=" fill-stone-100  w-[1.8rem] h-[2rem]" />
@@ -77,11 +73,10 @@ const Nav = () => {
 
 			<div>
 				<Link
-					className=" cursor-pointer pl-5 pr-5  flex flex-col items-center"
+					className=" cursor-pointer pl-5 pr-5  flex flex-col items-center hover:bg-white/20 rounded-[.5rem]"
 					to="contact"
 					activeClass="active"
 					smooth={true}
-					// offset={200}
 					spy={true}
 				>
 					<BsFillChatSquareDotsFill className=" fill-stone-100 w-[1.8rem] h-[2rem]" />

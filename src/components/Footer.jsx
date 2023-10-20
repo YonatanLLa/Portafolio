@@ -21,7 +21,7 @@ const Footer = () => {
 					</div>
 				</div>
 				{/* Social */}
-				<div className="flex lg:gap-44 justify-between px-2">
+				<div className="flex flex-col lg:flex-row lg:gap-44 lg:justify-between px-2">
 					<div className="flex flex-col ">
 						<h2 className="h2">Red Social</h2>
 						<div className="flex flex-col gap-1">
