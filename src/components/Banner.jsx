@@ -7,7 +7,7 @@ const Banner = () => {
 			id="banner"
 			className="section flex items-center justify-center  lg:py-0 overflow-hidden h-screen "
 		>
-			<div className="container lg:ml-[5.5rem]  lg:mr-[5.5rem] mx-auto lg:border lg:bg-zinc-900/30 rounded-[1rem] ">
+			<div className="container lg:ml-[5.5rem] mt-12  lg:mr-[5.5rem] mx-auto lg:border lg:bg-zinc-900/30 rounded-[1rem] ">
 				<div className="flex items-center h-full pt-8 pb-10 gap-2">
 					<div className="flex-1 flex-col items-center  p-4 lg:items-start  w-full h-full">
 						<p className="text-[2rem] text-gradient mb-[22px]">
