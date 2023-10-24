@@ -11,7 +11,7 @@ const Banner = () => {
       id="banner"
       className="section flex items-center justify-center  lg:py-0 overflow-hidden h-screen "
     >
-      <div className="container lg:ml-[5.5rem] mt-12  lg:mr-[5.5rem] mx-auto lg:border lg:bg-zinc-900/30 rounded-[1rem] ">
+      <div className="container lg:ml-[5.5rem] mt-12  lg:mr-[5.5rem] mx-auto  lg:bg-zinc-900/30 rounded-[1rem] ">
         <div className="flex items-center h-full pt-8 pb-10 gap-2">
           <div className="flex-1 flex-col items-center  p-4 lg:items-start  w-full h-full">
             <p className="text-[2rem] text-gradient mb-[22px]">
@@ -37,9 +37,11 @@ const Banner = () => {
               })}
             </h1>
             <p>Desarrollo de aplicaciones eficientes y escalables.</p>
+              <Link to="contact">
             <button className="btn mt-10 p-3">
-              <Link to="contact">Trabaja conmigo</Link>
+                Trabaja conmigo
             </button>
+                </Link>
           </div>
           <div className="hidden  lg:flex flex-1 lg:flex-row-reverse rotate-[0deg] h-full scale-x-[-1]">
             <img src={Foto} alt="" />
