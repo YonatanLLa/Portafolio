@@ -1,47 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-scroll";
-import { motion} from "framer-motion";
+
 
 const About = () => {
 
-	const [isInView, setIsView]  = useState(false)
-	const [hasAnimated, setHasAnimated] = useState(false);
-	const handleScroll = () =>{
-		if (!hasAnimated) {
-			const element = document.getElementById("view")
-			if (element) {
-				const elementTop = element.getBoundingClientRect().top
-				const elementBottom = element.getBoundingClientRect().bottom
-				const windowBottom = window.innerHeight
-				if (elementTop < windowBottom && elementBottom > 0) {
-					setIsView(true)
-				}else {
-					setIsView(false);
-				}
-			}
-		}
-	}
-
-	useEffect(() => {
-		window.addEventListener("scroll", handleScroll);
 	
-		return () => {
-		  window.removeEventListener("scroll", handleScroll);
-		};
-	  }, []);
-	  useEffect(() => {
-		if (isInView && !hasAnimated) {
-		  setHasAnimated(true);
-		}
-	  }, [isInView, hasAnimated]); 
 
 	return (
 		<section className="section " id="about">
-			<motion.div 
-				initial={{ scale: 1 }} // Tamaño inicial más pequeño
-				animate={{ scale: hasAnimated ? 1 : 0.2 }}
-				transition={{ duration: 2 }} // Duración de la animación
-				id="view"
+			<div 
+				
 				className="container  lg:ml-[5.5rem]  lg:mr-[5.5rem] mx-auto   rounded-[1rem]  lg:bg-zinc-900/30">
 				<div className="flex lg:flex-row h-full items-center flex-col ">
 					{/* img */}
@@ -67,7 +35,7 @@ const About = () => {
 							</Link>
 					</div>
 				</div>
-			</motion.div>
+			</div>
 		</section>
 	);
 };
