@@ -22,7 +22,7 @@ const Banner = () => {
               md:leading-light lg:text-7xl
               lg:leading-[1.2] font-bold md:tracking-[-4px]"
             >
-              {sentenceArray.map((word, wordIndex) => {
+              { sentenceArray.length ? sentenceArray.map((word, wordIndex) => {
                 return (
                   <div key={wordIndex} className="m-0 p-0">
                     {word.split("").map((letter, letterIndex) => {
@@ -34,7 +34,11 @@ const Banner = () => {
                     })}
                   </div>
                 );
-              })}
+              }): <h1  className="text-[2.5rem]  mb-[22px] leading-[44px] md:text-5xl
+              md:leading-light lg:text-7xl
+              lg:leading-[1.2] font-bold md:tracking-[-4px]">
+                {sentence}
+                </h1>}
             </h1>
             <p>Desarrollo de aplicaciones eficientes y escalables.</p>
               <Link to="contact">

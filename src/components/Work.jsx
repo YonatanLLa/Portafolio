@@ -15,8 +15,8 @@ const Work = () => {
 					{
 						datos.length > 0 && datos.map((dato, index) => {
 							return (
-								<>
-									<div key={index} className="m-4">
+								<div key={index}>
+									<div  className="m-4">
 										<div className="flex flex-col lg:flex-row justify-center items-center gap-5">
 											{/* text */}
 											<div className="flex flex-col w-full justify-center item-center gap-4">
@@ -73,7 +73,7 @@ const Work = () => {
 										</div>
 									</div>
 									<hr />
-								</>
+								</div>
 							);
 						})
 

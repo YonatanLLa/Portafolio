@@ -10,7 +10,7 @@ export const datos = [
 			"El objetivo es una SPA con todos los conocimientos aprendidos en el Bootcamp de Henry. Esta SPA consume informacion de una API externa, para hacer funcionalidades como buscar pokemons, paginado, detalle de cada juego, filtros combinados con ordenamiento, y tambien tener la posibilidad de añadir un juego a la lista. NO APTO PARA MOBILE",
 		links: {
 			github: "https://github.com/YonatanLLa/Pokemons-FullStack",
-			demo: "https://pokemons-yonatan.vercel.app",
+			demo: "https://pokemons-full-stack.vercel.app/",
 		},
 		image: project1,
 	},

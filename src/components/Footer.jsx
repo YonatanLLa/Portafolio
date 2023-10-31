@@ -8,7 +8,7 @@ import { BsWhatsapp } from "react-icons/bs";
 
 const Footer = () => {
 
-	const [color, setColor] = useState(false)
+	// const [color, setColor] = useState(false)
 
 
 	return (
