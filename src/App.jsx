@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import NavMobile from "./components/NavMobile";
 import Services from "./components/Services";
 import Work from "./components/Work";
-
+// import DisplayOption from "./components/DisplayOption";
 
 function App() {
 	return (
@@ -20,6 +20,7 @@ function App() {
 			<Header />
 			<About />
 			<Services />
+			{/* <DisplayOption/> */}
 			<Work />
 			<Contact />
 			<Footer />
