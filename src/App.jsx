@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import NavMobile from "./components/NavMobile";
 import Services from "./components/Services";
 import Work from "./components/Work";
+import WordGrid from "./components/WorkGrid";
 // import DisplayOption from "./components/DisplayOption";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 			<Header />
 			<About />
 			<Services />
+			{/* <WordGrid /> */}
 			{/* <DisplayOption/> */}
 			<Work />
 			<Contact />
