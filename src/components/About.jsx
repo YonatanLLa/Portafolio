@@ -7,7 +7,7 @@ const About = () => {
 	
 
 	return (
-		<section className="section " id="about">
+		<section className="section" id="about">
 			<div 
 				
 				className="container lg:py-8  lg:ml-[5.5rem]  lg:mr-[5.5rem] mx-auto   rounded-[1rem]  lg:bg-zinc-900/30">
@@ -15,7 +15,7 @@ const About = () => {
 					{/* img */}
 					<div className="flex-auto lg:bg-about bg-contain bg-no-repeat   lg:h-[440px]  mix-blend-lighten filter bg-top mr-4 lg:mr-0"></div>
 					{/* text */}
-					<div className="flex-1 lg:mt-12">
+					<div className="flex-1 mt-16 lg:mt-12">
 						<h2 className="h2 text-gradient text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before::opacity-40 before:-top-[2rem] before:hidden before:lg:block z-40">
 							Yonatan Ll.A.
 						</h2>

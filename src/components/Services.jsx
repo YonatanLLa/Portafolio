@@ -101,9 +101,9 @@ const Services = () => {
                   <motion.li
                     key={index}
                     variants={item}
-                    className="bg-stone-900/30 border-2 border-violet-500 rounded-lg p-2 m-3 flex justify-center flex-col items-center lg:w-[10rem] w-[6rem]"
+                    className="lg:bg-stone-900/30 lg:border-2 lg:border-violet-500 rounded-lg p-2 m-3 flex justify-center flex-col items-center lg:w-[10rem] w-[5rem]"
                   >
-                    <IconComponent className="lg:text-[8rem] text-[2rem]" />
+                    <IconComponent className="lg:text-[8rem] text-[4rem]" />
                     <h3 className="text-center">{service.title}</h3>
                   </motion.li>
                 );
@@ -128,9 +128,9 @@ const Services = () => {
                   <motion.li
                     key={index}
                     variants={item}
-                    className="bg-stone-900/30 border-2 border-violet-500 rounded-lg p-2 m-3 flex justify-center flex-col items-center lg:w-[10rem] w-[6rem]"
+                    className="lg:bg-stone-900/30 lg:border-2 lg:border-violet-500 rounded-lg p-2 m-3 flex justify-center flex-col items-center lg:w-[10rem] w-[6rem]"
                   >
-                    <IconComponent className="lg:text-[8rem] text-[2rem]" />
+                    <IconComponent className="lg:text-[8rem] text-[4rem]" />
                     <h3 className="text-center">{service.title}</h3>
                   </motion.li>
                 );
