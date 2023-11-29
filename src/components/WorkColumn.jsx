@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 import { datos } from "../logic/datos";
 
@@ -30,11 +30,12 @@ const WorkColumn = () => {
                         target="_blank"
                         className=" hover:via-violet-700"
                       >
-                        {/* <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                              <h1 className="font-dmserif text-3xl font-bold text-white">
-                                <a>Ver Demo</a>{" "}
-                              </h1>
-                            </div> */}
+                        <div className="absolute rounded-lg inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70 group-hover:backdrop-blur-md"></div>
+                        <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                          <h1 className="font-dmserif text-3xl font-bold text-white">
+                            <a>Ver Demo</a>{" "}
+                          </h1>
+                        </div>
                       </a>
                     </div>
                     <div className="flex flex-col w-full justify-center item-center gap-4">
@@ -70,7 +71,7 @@ const WorkColumn = () => {
           );
         })}
     </div>
-  )
-}
+  );
+};
 
-export default WorkColumn
+export default WorkColumn;
