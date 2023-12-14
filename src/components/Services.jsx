@@ -10,17 +10,17 @@ const Services = () => {
       scale: 1,
       transition: {
         delayChildren: 0.3,
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   const item = {
     hidden: { y: 50, opacity: 0 },
     visible: {
       y: 0,
-      opacity: 1
-    }
+      opacity: 1,
+    },
   };
 
   const [isFrontInView, setIsFrontInView] = useState(false);
@@ -82,14 +82,14 @@ const Services = () => {
 
   return (
     <div className="section" id="services">
-      <div className="container mx-auto">
-        <div className="h-full w-full flex flex-col justify-center items-center gap-7 mt-24">
-          <div className="flex flex-col">
+      <div className="container mt-14  lg:ml-[5.5rem]  lg:mr-[5.5rem] mx-auto   rounded-[1rem]  lg:bg-zinc-900/30 ">
+        <div class="grid grid-cols-2 grid-rows-2 gap-0 ">
+          <div class="col-span-1 row-span-1 py-3 bg-purple-600">
             <h1 className="h2 text-center text-3xl text-gradient mb-8 lg:text-4xl">
               FrontEnd
             </h1>
             <motion.ul
-              className="flex flex-wrap justify-center"
+              className="flex flex-wrap justify-center rounded-lg"
               id="front"
               variants={container}
               initial="hidden"
@@ -101,16 +101,17 @@ const Services = () => {
                   <motion.li
                     key={index}
                     variants={item}
-                    className="lg:bg-stone-900/30 lg:border-2 lg:border-violet-500 rounded-lg p-2 m-3 flex justify-center flex-col items-center lg:w-[10rem] w-[5rem]"
+                    className="lg:bg-stone-900/30 rounded-lg p-1 m-2 flex  flex-col justify-center  items-center lg:w-[7rem] w-[5rem]"
                   >
                     <IconComponent className="lg:text-[8rem] text-[4rem]" />
+                    {/* <img src={service.icono} alt="" /> */}
                     <h3 className="text-center">{service.title}</h3>
                   </motion.li>
                 );
               })}
             </motion.ul>
           </div>
-          <div className="flex flex-col">
+          <div class="col-span-1 row-span-1 py-3">
             <h1 className="h2 text-center mb-8 text-gradient lg:text-4xl">
               BackEnd
             </h1>
@@ -128,9 +129,36 @@ const Services = () => {
                   <motion.li
                     key={index}
                     variants={item}
-                    className="lg:bg-stone-900/30 lg:border-2 lg:border-violet-500 rounded-lg p-2 m-3 flex justify-center flex-col items-center lg:w-[10rem] w-[6rem]"
+                    className="lg:bg-stone-900/30 rounded-lg p-1 m-2 flex justify-center flex-col items-center lg:w-[7rem] w-[6rem]"
                   >
-                    <IconComponent className="lg:text-[8rem] text-[4rem]" />
+                    <IconComponent className="lg:text-[4rem] text-[4rem]" />
+                    <h3 className="text-center">{service.title}</h3>
+                  </motion.li>
+                );
+              })}
+            </motion.ul>
+          </div>
+          <div class="col-span-2 row-span-1 py-3">
+            <h1 className="h2 text-center mb-8 text-gradient lg:text-4xl">
+              Base de Datos
+            </h1>
+
+            <motion.ul
+              variants={container}
+              initial="hidden"
+              className="flex flex-wrap justify-center"
+              id="back"
+              animate={hasBackAnimated ? "visible" : "hidden"}
+            >
+              {services.bdd.map((service, index) => {
+                const IconComponent = service.icono;
+                return (
+                  <motion.li
+                    key={index}
+                    variants={item}
+                    className=" lg:bg-stone-900/30 rounded-lg p-1 m-2 flex justify-center flex-col items-center lg:w-[7rem] w-[5rem]"
+                  >
+                    <IconComponent className="lg:text-[3rem] text-[3rem]" />
                     <h3 className="text-center">{service.title}</h3>
                   </motion.li>
                 );
