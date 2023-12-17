@@ -6,7 +6,7 @@ import Filter from "./Filter";
 import WorkGrid from "./WorkGrid";
 import WorkColumn from "./WorkColumn";
 const Work = () => {
-  const [displayMode, setDisplayMode] = useState("");
+  const [displayMode, setDisplayMode] = useState("grid");
 
   return (
     <section
