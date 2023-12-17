@@ -14,7 +14,7 @@ const WorkGrid = () => {
                   {/* text */}
 
                   {/* img */}
-                  <div className="border rounded-b-3xl   bg-zinc-900/30 shadow-2xl shadow-zinc-900 ">
+                  <div className="border rounded-b-2xl   bg-zinc-900/30 shadow-2xl shadow-zinc-900 ">
                     {/* Direction */}
                     <div className="group relative z-20 cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
                       <div>

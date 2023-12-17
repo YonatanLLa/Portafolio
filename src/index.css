@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body{
-    
+html,
+body {
   margin: 0;
   padding: 0;
   /* margin-top: 50px; */
@@ -11,40 +11,36 @@ html, body{
   box-sizing: border-box;
   /* background-color: #151515f7; */
   overflow: auto;
-
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
   background-color: #18181b;
 }
-::-webkit-scrollbar-thumb{
-  
+::-webkit-scrollbar-thumb {
   background-color: rgba(215, 123, 255, 0.502);
-    border-radius: 5px;
+  border-radius: 5px;
 }
-::-webkit-scrollbar-track{
-  background: hsla(0,0%,55%,0);
+::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 55%, 0);
   /* visibility: hidden; */
 }
 
 .btn {
-  background: linear-gradient(
-    92.23deg,
-    /* #00e4f9d0 11.43%, */
-    #7E57C2 20%,
-    #00e4f9bc 200%,
-    #00e4f9bc 50.04%
-  );
   box-shadow: 0px 1px 70px rgba(224, 86, 255, 0.51);
 }
+
+.modo-grid-column {
+  box-shadow: 0px 1px 70px rgba(224, 86, 255, 0.51);
+  background-color: #7e57c2;
+}
+
 
 .btn:hover {
   background: linear-gradient(
     92.23deg,
-    /* #af55d8bd 21.43%, */
-    #00e4f984 20%,
-    #7E57C2 100%,
-    #7E57C2 50.04%
+    /* #af55d8bd 21.43%, */ #00e4f984 20%,
+    #7e57c2 100%,
+    #7e57c2 50.04%
   );
 }
 /* .textHover:hover{
@@ -59,19 +55,15 @@ html, body{
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background: linear-gradient(
     92.23deg,
-    #7E57C2 20%,
+    #7e57c2 20%,
     #00e4f9bc 200%,
-    #00e4f9bc 50.04%
-    /* 00e4f9bc */
-    /* af55d8bd */
+    #00e4f9bc 50.04% /* 00e4f9bc */ /* af55d8bd */
   );
-  fill: #fff
+  fill: #fff;
 }
-
-
 
 @layer base {
   body {
@@ -80,6 +72,7 @@ html, body{
   .h2 {
     @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
   }
+
   .h3 {
     @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
   }
@@ -101,5 +94,7 @@ html, body{
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex justify-center items-center;
   }
+  .modo-grid-column {
+    @apply rounded-[.5rem] p-1 font-primary text-white font-medium;
+  }
 }
-
