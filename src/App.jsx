@@ -7,7 +7,7 @@ import NavMobile from "./components/NavMobile";
 import Services from "./components/Services";
 import Work from "./components/Work";
 import WordGrid from "./components/WorkGrid";
-import Prueba from "./components/Prueba";
+// import Prueba from "./components/Prueba";
 // import DisplayOption from "./components/DisplayOption";
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
 			<Work />
 			<Contact />
 			<Footer />
-			<Prueba/>
+			{/* <Prueba/> */}
 		</div>
 	);
 }
