@@ -31,7 +31,7 @@ module.exports = {
       },
       backgroundImage: {
         site: "url('./assets/site-bg.jpg')",
-        about: "url('./assets/yonatan.png')",
+        about: "url('./assets/certificado.jpg')",
         services: "url('./assets/services.png')",
       },
     },
