@@ -9,12 +9,12 @@ const WorkGrid = () => {
         datos.map((dato, index) => {
           return (
             <div key={index}>
-              <div className="m-8">
-                <div className="flex flex-col lg:flex-row justify-center items-center gap-5">
+              <div className="m-4">
+                <div className="flex flex-col lg:flex-row justify-center items-center gap-2">
                   {/* text */}
 
                   {/* img */}
-                  <div className="border rounded-b-lg   bg-zinc-900/30 shadow-2xl shadow-zinc-900 ">
+                  <div className="border rounded-b-3xl   bg-zinc-900/30 shadow-2xl shadow-zinc-900 ">
                     {/* Direction */}
                     <div className="group relative z-20 cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
                       <div>

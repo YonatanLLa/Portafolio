@@ -1,6 +1,7 @@
 import project1 from "../assets/pokemon.png";
 import project2 from "../assets/book.png";
-import project3 from "../assets/portfolio.png";
+import project3 from "../assets/Captura.png";
+import project4 from "../assets/threads.png";
 
 export const datos = [
 	{
@@ -26,14 +27,25 @@ export const datos = [
 		image: project2,
 	},
 	{
-		title: "Portafolio",
-		tipe: "Full Stack",
+		title: "Rick and Morty",
+		tipe: "FrontEnd",
 		description:
-			"Lo que estas viendo es mi portafolio. Aqui encontraras todos los proyectos que he realizado.",
+			"Simulacion del estado global con useContext",
 		links: {
 			github: "https://github.com/YonatanLLa",
-			demo: "https://portafolio-yonatan.vercel.app/",
+			demo: "https://rickandmorty-yonatan.vercel.app/",
 		},
 		image: project3,
+	},
+	{
+		title: "Threads",
+		tipe: "FullStack",
+		description:
+			"Es un clon de Threads una red social.",
+		links: {
+			github: "https://github.com/YonatanLLa",
+			demo: "https://threads-orpin.vercel.app/",
+		},
+		image: project4,
 	},
 ];
