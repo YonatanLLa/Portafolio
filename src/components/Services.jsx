@@ -83,7 +83,7 @@ const Services = () => {
   return (
     <div className="section" id="services">
       <div className="container mt-14  lg:ml-[5.5rem]  lg:mr-[5.5rem] mx-auto   rounded-[1rem]   ">
-        <div class="grid grid-cols-2 grid-rows-2 gap-0 ">
+        <div class="lg:grid lg:grid-cols-2 lg:grid-rows-2 gap-0 ">
           <div class="col-span-1 row-span-1 py-3 lg:bg-zinc-900/30 m-1 rounded-lg ">
             <h1 className="h2 text-center text-3xl text-gradient mb-8 lg:text-4xl">
               FrontEnd
